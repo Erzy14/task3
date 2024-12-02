@@ -9,7 +9,7 @@ const { exec } = require('child_process');
 const app = express();
 app.use(express.json()); //midleware needed to handle post request
 
-//Environment: Disable unauthorized x509 certificates.
+//Environment: Disable unauthorized x509 certificates. 
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 
 //JWT payload
